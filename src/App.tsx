@@ -1,9 +1,14 @@
-import './index.css'
+import './index.css';
+import { Header } from './components/Header/Header';
+import { Footer } from './components/Footer/Footer';
 
 function App() {
   return (
-  <div>Hello world</div>
-  )
+    <>
+      <Header />
+      <Footer />
+    </>
+  );
 }
 
-export default App
+export default App;
