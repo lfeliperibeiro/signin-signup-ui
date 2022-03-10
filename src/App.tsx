@@ -1,14 +1,8 @@
-import './index.css';
-import { Header } from './components/Header/Header';
-import { Footer } from './components/Footer/Footer';
+import "./index.css";
+import { Login } from "./Pages/Login";
 
 function App() {
-  return (
-    <>
-      <Header />
-      <Footer />
-    </>
-  );
+  return <Login />;
 }
 
 export default App;
