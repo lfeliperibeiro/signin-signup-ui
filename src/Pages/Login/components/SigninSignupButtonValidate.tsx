@@ -8,10 +8,10 @@ export function SigninSignupButtonValidate(props: {
   loading: boolean;
 }) {
   return (
-    <div className={'mt-2'}>
+    <div className={'mt-4'}>
       {props.login ? (
         <>
-          <div className={'text-red-700 text-center mb-2'}>
+          <div className={'text-red-700 text-center mb-4 text-sm'}>
             {props.error && props.message}
           </div>
           <Button type={'submit'}>
@@ -20,7 +20,7 @@ export function SigninSignupButtonValidate(props: {
         </>
       ) : (
         <>
-          <div className={'text-red-700 text-center mb-2'}>
+          <div className={'text-red-700 text-center mb-4 text-sm'}>
             {props.error && props.message}
           </div>
           <Button type={'submit'}>
