@@ -1,6 +1,6 @@
 import './index.css';
 import { Routes, Route } from 'react-router-dom';
-import { Login } from './Pages/Login';
+import { Login } from './Pages/Login/Login';
 import { Dashboard } from './Pages/DashBoard';
 
 function App() {
