@@ -4,11 +4,9 @@ interface Props
   extends React.DetailedHTMLProps<
     React.ButtonHTMLAttributes<HTMLButtonElement>,
     HTMLButtonElement
-  > {
-  text: string;
-}
+  > {}
 
-export const Button = ({ text, onClick, ...rest }: Props) => {
+export const Button = ({ children, ...rest }: Props) => {
   return (
     <button
       className={
@@ -16,7 +14,7 @@ export const Button = ({ text, onClick, ...rest }: Props) => {
       }
       {...rest}
     >
-      {text}
+      {children}
     </button>
   );
 };
