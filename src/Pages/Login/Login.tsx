@@ -4,7 +4,7 @@ import { signSignupUrl } from '../../lib/axios';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 import { useStore } from '../../store/useStore';
-import { Inputs } from '../types/login';
+import { Inputs } from './types';
 import { SigninSignupButtonValidate } from './components/SigninSignupButtonValidate';
 import { InputPassword } from './components/InputPassword';
 
