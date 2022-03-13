@@ -74,24 +74,9 @@ export const Login = () => {
         'bg-amber-300 w-screen h-screen flex items-center justify-center'
       }
     >
-      <div className={'bg-white rounded shadow-lg m-6'}>
+      <div className={'bg-white rounded-lg shadow-lg m-6'}>
         <form className={'p-6'} onSubmit={handleSubmit(onSubmit)}>
-          {isLogin ? (
-            <LoginText
-              title={'Faça seu Login'}
-              text={'Você ainda não tem conta? então faça o'}
-              linkText={'cadastro'}
-              onClick={() => setIsLogin(false)}
-            />
-          ) : (
-            <LoginText
-              title={'Faça seu Cadastro'}
-              text={'Faça seu cadastro agora'}
-              linkText={'voltar'}
-              onClick={() => setIsLogin(true)}
-            />
-          )}
-
+          <LoginText onClick={() => setIsLogin(!isLogin)} isLogin={isLogin} />
           <div className={'flex flex-col mt-4 gap-1.5'}>
             <Input
               value={email}
