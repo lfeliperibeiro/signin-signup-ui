@@ -23,17 +23,23 @@
 
 ## 📖 Instructions
 
-* Step 1
 
-```bash
+install dependencies
+```shell
 run yarn 
 ```
-
-* step 2
-
-```bash
-insert  the api address as it is in the .env.example
+run project
+```shell
+yarn run dev
 ```
+run tests
+```shell
+yarn test
+```
+
+
+insert the api address as it is in the .env.example
+
 
 Note: if you are interested in using the API that I already created, just clone this repository
 [API](https://github.com/lfeliperibeiro/nestjs-rest-course)
