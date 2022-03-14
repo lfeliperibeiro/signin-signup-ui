@@ -37,4 +37,11 @@ describe('LoginText', () => {
 
     expect(title.textContent).toBe('Crie sua conta agora');
   });
+
+  it('should text link of isLogin is true', () => {
+    render(<LoginText onClick={fn} isLogin={true} />);
+    const title = screen.getByTestId('login-link');
+
+    expect(title.textContent).toBe('cadastro');
+  });
 });
