@@ -44,4 +44,11 @@ describe('LoginText', () => {
 
     expect(title.textContent).toBe('cadastro');
   });
+
+  it('should text link of isLogin is false', () => {
+    render(<LoginText onClick={fn} isLogin={false} />);
+    const title = screen.getByTestId('login-link');
+
+    expect(title.textContent).toBe('voltar ao login');
+  });
 });
