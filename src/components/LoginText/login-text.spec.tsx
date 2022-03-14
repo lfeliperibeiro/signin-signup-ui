@@ -23,4 +23,11 @@ describe('LoginText', () => {
 
     expect(title.textContent).toBe('Crie sua Conta');
   });
+
+  it('should subtitle of isLogin is true', () => {
+    render(<LoginText onClick={fn} isLogin={true} />);
+    const title = screen.getByTestId('login-subtitle');
+
+    expect(title.textContent).toBe('Você ainda não tem conta? então faça o');
+  });
 });
