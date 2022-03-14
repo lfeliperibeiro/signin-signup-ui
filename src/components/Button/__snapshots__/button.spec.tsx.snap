@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should render correct 1`] = `
+<button
+  class="text-xl bg-amber-600 text-white w-full px-0.5 py-2 rounded hover:bg-amber-900"
+  data-testid="button"
+>
+  test
+</button>
+`;
