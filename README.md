@@ -51,6 +51,7 @@ This project was developed with the following technologies:
 - [React](https://reactjs.org)
 - [Vite](https://vitejs.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [zustand](https://github.com/pmndrs/zustand)
 - [tailwind](https://tailwindcss.com/)
 - [jest](https://jestjs.io/)
 - [testing-library](https://testing-library.com/)
