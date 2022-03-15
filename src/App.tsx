@@ -1,13 +1,25 @@
 import './index.css';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 import { Login } from './Pages/Login/Login';
-import { Dashboard } from './Pages/DashBoard';
+import { User } from './Pages/User';
+import { useStore } from './store/useStore';
+import { useEffect } from 'react';
 
 function App() {
+  const { token } = useStore();
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!token) {
+      navigate('/');
+    }
+  }, []);
+
   return (
     <Routes>
       <Route path={'/'} element={<Login />} />
-      <Route path={'/dashboard'} element={<Dashboard />} />
+      {token && <Route path={'/user'} element={<User />} />}
     </Routes>
   );
 }

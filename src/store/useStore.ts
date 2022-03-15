@@ -2,17 +2,17 @@ import create from 'zustand';
 import produce from 'immer';
 
 type UserType = {
-  userEmail: string;
-  setUser: (userEmail: string) => void;
+  token: string;
+  setToken: (token: string) => void;
 };
 
 export const useStore = create<UserType>((set) => ({
-  userEmail: '',
-  setUser: (userEmail) =>
+  token: '',
+  setToken: (token) =>
     set(
       produce((state) => ({
         ...state,
-        userEmail,
+        token,
       }))
     ),
 }));
