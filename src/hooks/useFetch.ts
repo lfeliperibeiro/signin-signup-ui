@@ -12,7 +12,7 @@ export function useFetch<T = unknown>(
 
   useEffect(() => {
     signSignupUrl
-      .post(url, options)
+      .get(url, options)
       .then((res) => {
         setData(res.data);
       })

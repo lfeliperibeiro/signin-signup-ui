@@ -19,7 +19,7 @@ export const Login = () => {
 
   const navigate = useNavigate();
 
-  const { setUser } = useStore();
+  const { setToken } = useStore();
 
   const { handleSubmit } = useForm<Inputs>();
 
@@ -54,10 +54,10 @@ export const Login = () => {
           headers: { 'Content-Type': 'application/json' },
         }
       )
-      .then(() => {
+      .then((res) => {
         setLoading(true);
-        navigate('/dashboard');
-        setUser(email);
+        navigate('/user');
+        setToken(res.data.access_token);
       })
       .catch((error) => {
         isLogin
