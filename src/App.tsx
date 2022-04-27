@@ -14,7 +14,7 @@ function App() {
     if (!token) {
       navigate('/');
     }
-  }, []);
+  }, [token]);
 
   return (
     <Routes>
